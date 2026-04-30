@@ -1,0 +1,36 @@
+.addForm {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  margin-bottom: 15px;
+  display: grid;
+  gap: 10px;
+}
+
+.addForm input,
+.addForm select,
+.addForm button {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.addForm button {
+  background: #047857;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: #f3f4f6;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+}
+
+.formError {
+  color: #b91c1c;
+  font-size: 0.95rem;
+}

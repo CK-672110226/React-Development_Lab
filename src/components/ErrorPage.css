@@ -1,0 +1,121 @@
+.error-screen {
+  min-height: 100vh;
+  background: linear-gradient(0deg, #202239, #8595ac);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.error-page {
+  position: relative;
+  width: min(100%, 800px);
+  min-height: 600px;
+  z-index: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d0c1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+}
+
+.error-header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error-logo {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -17px;
+  color: #525c7c;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.error-content {
+  text-align: center;
+  padding: 70px 32px 32px;
+  color: #ffffff;
+}
+
+.error-content h1 {
+  font-weight: 900;
+  font-size: clamp(90px, 16vw, 165px);
+  line-height: 1;
+  margin-bottom: -10px;
+  opacity: 0.6;
+}
+
+.error-content h2 {
+  font-weight: 700;
+  font-size: clamp(24px, 4vw, 34px);
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.error-content p {
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+.error-fixes {
+  list-style: disc;
+  width: min(100%, 420px);
+  margin: 0 auto 24px;
+  text-align: left;
+  opacity: 0.85;
+}
+
+.error-fixes li {
+  margin-bottom: 8px;
+}
+
+.error-back-btn {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.error-back-btn:hover {
+  opacity: 1;
+}
+
+.error-raw {
+  display: block;
+  margin-top: 16px;
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+.error-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 720px) {
+  .error-page {
+    min-height: 560px;
+  }
+
+  .error-content {
+    padding-top: 88px;
+  }
+}
