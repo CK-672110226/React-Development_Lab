@@ -11,7 +11,6 @@ function App() {
         <header className={styles.header}>
           <h1>{import.meta.env.VITE_APP_APP_TITLE}</h1>
         </header>
-
         <div className={styles.mainLayout}>
           <aside>
             <ExpenseSummary />
